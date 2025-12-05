@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+
+.header {
+  background: #4a6cf7;
+  color: white;
+  padding: 5px 20px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background: #4a6cf7;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.team-list {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.team-card {
+  background: white;
+  border-left: 6px solid #555;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.team-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.team-description {
+  margin-top: 8px;
+  color: #555;
+}
+
+.team-members {
+  margin-top: 16px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.member-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+.member-role {
+  font-size: 14px;
+  color: #555;
+}
+
+.member-skills {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
