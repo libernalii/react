@@ -1,0 +1,45 @@
+.schedules-wrapper {
+    max-width: 700px;
+    background: #f9f9f9;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 6px 20px;
+}
+
+.schedules-wrapper h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.schedules-date {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.schedules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+@media (max-width: 500px) {
+    .schedules-wrapper {
+        padding: 20px;
+    }
+
+    .schedules-wrapper h1 {
+        font-size: 20px;
+    }
+
+    .schedules-date {
+        font-size: 14px;
+    }
+}
