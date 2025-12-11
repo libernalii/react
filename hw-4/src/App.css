@@ -1,0 +1,18 @@
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+h2,
+h3 {
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.app {
+    max-width: 950px;
+    margin: 0 auto;
+}
