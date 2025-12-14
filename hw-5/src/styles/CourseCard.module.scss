@@ -1,0 +1,50 @@
+@use "./index" as *;
+
+.card {
+  padding: 16px;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  position: relative;
+  @include hover-lift;
+}
+
+.free {
+  border-color: $free-color;
+}
+
+.paid {
+  border-color: $paid-color;
+}
+
+.levelBeginner {
+  background: $bg-beginner;
+}
+
+.levelIntermediate {
+  background: $bg-intermediate;
+}
+
+.levelAdvanced {
+  background: $bg-advanced;
+}
+
+.new {
+  border-color: $new-color;
+  @include pulse;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.freeBadge {
+  @include badge-base;
+  background-color: $free-color;
+}
+
+.newBadge {
+  @include badge-base;
+  background-color: $new-color;
+}

@@ -1,0 +1,15 @@
+@mixin hover-lift($y: -6px) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY($y);
+  }
+}
+
+@mixin badge-base {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: #fff;
+}

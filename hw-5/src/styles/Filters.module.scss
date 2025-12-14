@@ -1,0 +1,76 @@
+@use "./index" as *;
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.group {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+
+  &.active {
+    background: #1f2937;
+    color: white;
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #9ca3af;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: rotate(45deg) scale(1);
+}
+
+.freeCheckbox input[type="checkbox"] {
+  border-color: $free-color;
+}
+
+.freeCheckbox input[type="checkbox"]:checked {
+  background-color: $free-color;
+}
+
+.newCheckbox input[type="checkbox"] {
+  border-color: $new-color;
+}
+
+.newCheckbox input[type="checkbox"]:checked {
+  background-color: $new-color;
+}
