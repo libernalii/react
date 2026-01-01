@@ -1,0 +1,118 @@
+/* Базові стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+  color: #111827;
+}
+
+/* Кнопки */
+button, a.button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover, a.button:hover {
+  opacity: 0.85;
+}
+
+/* ProductCard */
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Зображення картки */
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Кнопка Details */
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  background: #2563eb;
+}
+
+/* Список карток */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Галерея на сторінці деталей */
+.product-details {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-details img.main-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-details .thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-details .thumbnails img {
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: border 0.2s;
+}
+
+.product-details .thumbnails img.active {
+  border: 2px solid #3b82f6;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .product-details {
+    padding: 10px;
+  }
+
+  .product-details {
+    flex-direction: column;
+  }
+
+  .product-details img.main-image {
+    max-width: 100%;
+  }
+}
