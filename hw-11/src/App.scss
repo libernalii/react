@@ -1,0 +1,138 @@
+/* ===== RESET / BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== APP LAYOUT ===== */
+#root {
+  min-height: 100vh;
+}
+
+header,
+footer {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== HEADER ===== */
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+}
+
+/* ===== MAIN ===== */
+.main {
+  min-height: calc(100vh - 120px);
+  padding: 32px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  select {
+    margin-top: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+/* ===== THEMES ===== */
+.main.light {
+  background-color: #f9fafb;
+  color: #111;
+
+  header,
+  footer {
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
+.main.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+
+  header,
+  footer {
+    background-color: #020617;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  button {
+    background-color: #e5e7eb;
+    color: #020617;
+  }
+
+  select {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #334155;
+  }
+}
+
+/* ===== FONT SIZES ===== */
+.small {
+  font-size: 14px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.large {
+  font-size: 20px;
+}
